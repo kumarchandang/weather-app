@@ -7,6 +7,8 @@ const chalk = require('chalk')
 
 const app = express()
 
+const port = process.env.PORT || 3000
+
 const publicDirPath = path.join(__dirname , '../public')
 const viewDirPath = path.join(__dirname,'../templates/views')
 const partialsDirPath = path.join(__dirname,'../templates/partials')
@@ -71,6 +73,6 @@ app.get('/weather', (req, res) => {
 
 
 
-app.listen(3000, () => {
-	console.log('Server is running with 3000 port')
+app.listen(port, () => {
+	console.log('Server is running with '+ port +' port')
 })
