@@ -1,4 +1,4 @@
-console.log('This is the client side js file')
+
 
 
 
